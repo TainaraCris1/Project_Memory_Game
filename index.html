@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="name">
+            <img src="img/memory_game.png" alt="card-name">
+        </div>
+
+        <div class="overlay-text visible">
+            Click to Start
+        </div>
+
+        <div id="game-over-text" class="overlay-text">
+            GAME OVER
+            <span class="overlay-text-small">Click to Restart</span>
+        </div>
+
+        <div id="victory-text" class="overlay-text">
+            VICTORY
+            <span class="overlay-text-small">Click to Restart</span>
+        </div>
+
+
+        <div class="game-container">
+
+            <div class="wrapper-cards">
+
+                <div class="card">
+                    <img class="back-face" src="img/Fire.jpg" alt="card-img">
+                    <img class="front-face card-value" src="img/0.jpg" alt="card-img">
+                </div>
+
+                <div class="card">
+                    <img class="back-face" src="img/Fire.jpg" alt="card-img">
+                    <img class="front-face card-value" src="img/1.jpg" alt="card-img">
+                </div>
+
+                <div class="card">
+                    <img class="back-face" src="img/Fire.jpg" alt="card-img">
+                    <img class="front-face card-value" src="img/2.jpg" alt="card-img">
+                </div>
+
+                <div class="card">
+                    <img class="back-face" src="img/Fire.jpg" alt="card-img">
+                    <img class="front-face card-value" src="img/3.jpg" alt="card-img">
+                </div>
+
+                <div class="card">
+                    <img class="back-face" src="img/Fire.jpg" alt="card-img">
+                    <img class="front-face card-value" src="img/4.jpg" alt="card-img">
+                </div>
+
+                <div class="card">
+                    <img class="back-face" src="img/Fire.jpg" alt="card-img">
+                    <img class="front-face card-value" src="img/5.jpg" alt="card-img">
+                </div>
+
+                <div class="card">
+                    <img class="back-face" src="img/Fire.jpg" alt="card-img">
+                    <img class="front-face card-value" src="img/0.jpg" alt="card-img">
+                </div>
+
+                <div class="card">
+                    <img class="back-face" src="img/Fire.jpg" alt="card-img">
+                    <img class="front-face card-value" src="img/1.jpg" alt="card-img">
+                </div>
+
+                <div class="card">
+                    <img class="back-face" src="img/Fire.jpg" alt="card-img">
+                    <img class="front-face card-value" src="img/2.jpg" alt="card-img">
+                </div>
+
+                <div class="card">
+                    <img class="back-face" src="img/Fire.jpg" alt="card-img">
+                    <img class="front-face card-value" src="img/3.jpg" alt="card-img">
+                </div>
+
+                <div class="card">
+                    <img class="back-face" src="img/Fire.jpg" alt="card-img">
+                    <img class="front-face card-value" src="img/4.jpg" alt="card-img">
+                </div>
+
+                <div class="card">
+                    <img class="back-face" src="img/Fire.jpg" alt="card-img">
+                    <img class="front-face card-value" src="img/5.jpg" alt="card-img">
+                </div>
+
+
+            </div>
+
+
+            <div class="game-info-container">
+
+                <div class="game-info-container">
+                    <div class="img-time info">
+                        <img src="img/timer.png" alt="img-time">
+                    </div>
+                    <div class="game-info">
+                        <!-- Time --> <span id="time-remaining">60</span>
+                    </div>
+                </div>
+
+                <div class="game-info-container">
+                    <div class="target info">
+                        <img src="img/target.png" alt="target">
+                    </div>
+                    <div class="game-info">
+                        <!-- Flips --> <span id="flips">0</span>
+                    </div>
+                </div>
+
+                <div class="restart info">
+                <img class="restart"  src="img/restart.png" alt="restart">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
