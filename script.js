@@ -71,6 +71,18 @@ class memoryGame {
     this.cardToCheck = null;
   }
 
+//
+
+// // let card = document.getElementsByClassName("card");
+// for(var i = 0; i<=400; i++){
+//   let block = document.createElement("div");
+//   block.classList.add("block");
+//   card.appendChild(block);
+// }
+
+
+//
+
   cardMatch(card1, card2) {
     this.matchedCards.push(card1);
     this.matchedCards.push(card2);
@@ -111,6 +123,8 @@ class memoryGame {
       card !== this.cardToCheck
     );
   }
+
+
 }
 
 if (document.readyState == "loading") {
@@ -136,9 +150,16 @@ function ready() {
       game.flipCard(card);
     });
   });
+
+
+  let restart = document.getElementById("restart_img");
+  restart.addEventListener("click", () =>{
+    window.location = window.location
+  });    
+   
+ 
 }
 
-function restart() {
-  let restart = document.getElementsByClassName("restart");
-  restart.addEventListener("click", ready());
-}
+
+
+
