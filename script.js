@@ -71,18 +71,6 @@ class memoryGame {
     this.cardToCheck = null;
   }
 
-//
-
-// // let card = document.getElementsByClassName("card");
-// for(var i = 0; i<=400; i++){
-//   let block = document.createElement("div");
-//   block.classList.add("block");
-//   card.appendChild(block);
-// }
-
-
-//
-
   cardMatch(card1, card2) {
     this.matchedCards.push(card1);
     this.matchedCards.push(card2);
